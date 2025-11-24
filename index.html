@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed | .NET Backend Developer Portfolio</title>
+    <meta
+      name="description"
+      content=".NET backend engineer building scalable, high-performance RESTful APIs with ASP.NET Core, Azure, and modern DevOps."
+    />
+    <meta property="og:title" content="Ahmed | .NET Backend Developer" />
+    <meta
+      property="og:description"
+      content="Explore Ahmed's featured ASP.NET Core projects, skills, and experience as a backend engineer."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:url" content="https://your-domain.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ahmed | .NET Backend Developer" />
+    <meta
+      name="twitter:description"
+      content=".NET backend engineer crafting resilient APIs on Azure and AWS."
+    />
+    <meta name="twitter:image" content="/og-image.png" />
+    <link rel="icon" type="image/png" href="/vite.svg" />
+    <link rel="prefetch" as="image" href="/assets/profile.jpg" />
+    <link rel="prefetch" as="document" href="/assets/resume.pdf" />
+    <link rel="prefetch" as="image" href="/assets/projects/hyperion-api.svg" />
+    <link rel="prefetch" as="image" href="/assets/projects/insight-dashboard.svg" />
+    <link rel="prefetch" as="image" href="/assets/projects/reliance-ci.svg" />
+    <script>
+      ;(() => {
+        try {
+          const stored = localStorage.getItem('portfolio-theme')
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const theme = stored || (prefersDark ? 'dark' : 'light')
+          document.documentElement.classList.add(theme)
+        } catch (error) {
+          document.documentElement.classList.add('dark')
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-neon-blue"
+      >Skip to content</a
+    >
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

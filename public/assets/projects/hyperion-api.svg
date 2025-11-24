@@ -1,0 +1,24 @@
+<svg width="640" height="400" viewBox="0 0 640 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="640" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220" />
+      <stop offset="1" stop-color="#1E2761" />
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="640" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DA3FF" />
+      <stop offset="1" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#bg)"/>
+  <g opacity="0.14">
+    <path d="M60 80H580M60 120H580M60 160H580M60 200H580M60 240H580M60 280H580M60 320H580" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <path d="M120 60V340M200 60V340M280 60V340M360 60V340M440 60V340M520 60V340" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <path d="M120 280L220 200L320 260L420 140L520 220" stroke="url(#line)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="220" cy="200" r="12" fill="#2DA3FF"/>
+  <circle cx="320" cy="260" r="12" fill="#2DA3FF"/>
+  <circle cx="420" cy="140" r="12" fill="#8B5CF6"/>
+  <circle cx="520" cy="220" r="12" fill="#8B5CF6"/>
+  <text x="60" y="360" fill="#E2E8F0" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="600">Billing API throughput</text>
+</svg>
+

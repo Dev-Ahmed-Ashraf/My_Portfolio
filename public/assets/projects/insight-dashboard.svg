@@ -1,0 +1,25 @@
+<svg width="640" height="400" viewBox="0 0 640 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="640" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070A12" />
+      <stop offset="1" stop-color="#11203F" />
+    </linearGradient>
+    <linearGradient id="bars" x1="0" y1="0" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DA3FF" />
+      <stop offset="1" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#bg2)"/>
+  <rect x="80" y="100" width="480" height="220" rx="20" fill="#0F172A" opacity="0.8"/>
+  <rect x="120" y="180" width="40" height="100" rx="12" fill="url(#bars)"/>
+  <rect x="200" y="150" width="40" height="130" rx="12" fill="url(#bars)" opacity="0.9"/>
+  <rect x="280" y="130" width="40" height="150" rx="12" fill="url(#bars)" opacity="0.8"/>
+  <rect x="360" y="110" width="40" height="170" rx="12" fill="url(#bars)" opacity="0.75"/>
+  <rect x="440" y="160" width="40" height="120" rx="12" fill="url(#bars)" opacity="0.7"/>
+  <path d="M120 220C160 180 200 260 240 200C280 140 320 240 360 190C400 140 440 210 480 190" stroke="#2DA3FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="200" cy="260" r="8" fill="#8B5CF6"/>
+  <circle cx="320" cy="240" r="8" fill="#2DA3FF"/>
+  <circle cx="440" cy="210" r="8" fill="#8B5CF6"/>
+  <text x="80" y="70" fill="#E2E8F0" font-family="Space Grotesk, sans-serif" font-size="26" font-weight="600">Observability signals</text>
+</svg>
+
