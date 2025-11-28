@@ -3,7 +3,7 @@ import { experienceTimeline } from '../data/timeline'
 
 const container = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.12 } },
+  visible: { transition: { staggerChildren: 0.05 } },
 }
 
 const item = {

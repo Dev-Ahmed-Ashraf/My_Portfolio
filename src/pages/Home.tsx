@@ -26,7 +26,7 @@ const Home = ({ theme, onToggleTheme }: HomeProps) => {
 
   // Accessibility: quick skip link to main content for keyboard users
   useEffect(() => {
-    document.title = 'Ahmed Ashraf - .NET Backend Developer'
+    document.title = 'Ahmed Ashraf | .NET Backend Developer'
   }, [])
 
   const handleScrollToProjects = useCallback(() => {

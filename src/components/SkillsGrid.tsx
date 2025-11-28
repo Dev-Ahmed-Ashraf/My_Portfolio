@@ -11,7 +11,7 @@ const SkillsGrid = ({ activeSkill, onSelectSkill }: SkillsGridProps) => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.15, delayChildren: 0.2, duration: 0.4 },
+      transition: { staggerChildren: 0.05, delayChildren: 0.05, duration: 0.25 },
     },
   }
 
