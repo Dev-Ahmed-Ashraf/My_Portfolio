@@ -1,11 +1,8 @@
 # 🚀 Ahmed Ashraf — Developer Portfolio
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View-blue)](https://dev-ahmed-ashraf.vercel.app/)
+
 Modern React (Vite) + TailwindCSS + Framer Motion and single-page portfolio tailored for .NET backend roles. It delivers neon blue/purple styling, Framer Motion micro-interactions, Tailwind-driven theming, and EmailJS-powered contact forms — all optimized for recruiters and hiring managers.
-
-## 🌟 Live Preview
-
-🔗 Demo: (Add link after deployment)
-🧑‍💻 GitHub: (You’re here!)
 
 ## ✨ Tech Stack
 
