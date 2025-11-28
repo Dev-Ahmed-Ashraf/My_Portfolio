@@ -9,7 +9,7 @@ This folder contains the image and PDF assets referenced by the portfolio site. 
 
 Notes :
 
-- Keep filenames unchanged: many components import the assets by fixed paths (e.g. `/assets/profile.jpg` or `/assets/projects/...`). If you rename files, update `src/data/projects.ts` and component imports accordingly.
+- Keep filenames unchanged: many components import the assets by fixed paths (e.g. `public/assets/profile.jpg` or `public/assets/projects/...`). If you rename files, update `src/data/projects.ts` and component imports accordingly.
 - Cache: browsers may cache images. If you replace an existing file and don't see updates, clear the browser cache or bump the filename briefly (e.g. `profile-v2.jpg`).
 - Preview: run the dev server and open `http://localhost:5174` (or the port Vite reports) to preview changes.
 - Accessibility: use a clear, well-lit headshot and include a PDF that is text-searchable (not just scanned images) for better ATS/reader support.

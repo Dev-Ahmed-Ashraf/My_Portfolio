@@ -1,30 +1,34 @@
+<div align="center">
+
 # 🚀 Ahmed Ashraf — Developer Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View-blue)](https://dev-ahmed-ashraf.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View-blue?style=for-the-badge)](https://dev-ahmed-ashraf.vercel.app/)
+
+</div>
 
 Modern React (Vite) + TailwindCSS + Framer Motion and single-page portfolio tailored for .NET backend roles. It delivers neon blue/purple styling, Framer Motion micro-interactions, Tailwind-driven theming, and EmailJS-powered contact forms — all optimized for recruiters and hiring managers.
 
 ## ✨ Tech Stack
 
-Frontend: React, TypeScript, Vite
-Styling: TailwindCSS, CSS Variables
-Animations: Framer Motion
-Contact: EmailJS
-Tooling: ESLint, Prettier, Git Hooks
-Deployment: Vercel 🚀
+- Frontend: React, TypeScript, Vite
+- Styling: TailwindCSS, CSS Variables
+- Animations: Framer Motion
+- Contact: EmailJS
+- Tooling: ESLint, Prettier, Git Hooks
+- Deployment: Vercel
 
-## 🎯 Features
+🎯 Features
 
-- ⚫️ Dark & light themes with 300 ms transitions and persisted preference
-- ✨ Hero with animated gradient lettering, orbiting shapes, and CTA buttons
-- 💼 Featured projects grid with hover-lift cards, lazy-loaded SVG previews, and skill-based highlighting
-- 🧠 Skills matrix with grouped chips, proficiency bars, and project filters
-- 📬 Timeline, contact form (EmailJS) with validation, social icons & Toast notifications
-- 🔍 SEO metadata + OpenGraph image (`public/assets/og-image.png`) generated from hero palette
-- 🧭 Accessibility: semantic landmarks, focus-visible styles, skip link, aria labels, and reduced-motion guard
-- ⚡ Performance touches: asset prefetching, lazy-loaded imagery, lightweight SVG assets
+- ⚫️ Dark & light themes with 300 ms transitions and persisted preference.
+- ✨ Hero with animated gradient lettering, orbiting shapes, and CTA buttons.
+- 💼 Featured projects grid with hover-lift cards, lazy-loaded SVG previews, and skill-based highlighting.
+- 🧠 Skills matrix with grouped chips, proficiency bars, and project filters.
+- 📬 Timeline, contact form (EmailJS) with validation, social icons & Toast notifications.
+- 🔍 SEO metadata + OpenGraph image (`public/assets/og-image.png`) generated from hero palette.
+- 🧭 Accessibility: semantic landmarks, focus-visible styles, skip link, aria labels, and reduced-motion guard.
+- ⚡ Performance touches: asset prefetching, lazy-loaded imagery, lightweight SVG assets.
 
-## Project Structure
+**Project Structure**
 
 ```
 src/
@@ -40,7 +44,7 @@ public/
 
 Inline comments mark the exact places to customize your name, bio, projects, resume link, and social handles.
 
-## 🚀 Getting Started
+🚀 Getting Started
 
 ```bash
 npm install
@@ -49,7 +53,7 @@ npm run dev
 
 Visit `http://localhost:5173`.
 
-### 🔐 Environment Variables
+🔐 Environment Variables
 
 Create `.env.local` based on `.env.example`:
 
@@ -107,7 +111,7 @@ Jest + React Testing Library ships with an example Header test (`src/components/
 - Includes name and ".NET Backend Developer" subtitle
 - If you want to regenerate it, ensure it maintains the same dimensions and color scheme for consistency
 
-## 🌐 Deployment (Vercel)
+🌐 Deployment (Vercel)
 
 1. Push this repo to GitHub.
 2. Create a new Vercel project and import the repository.
@@ -115,7 +119,7 @@ Jest + React Testing Library ships with an example Header test (`src/components/
 4. Build command: `npm run build`, Output: `dist`.
 5. Trigger a deployment — Vercel serves the optimized SPA globally.
 
-## Customization Checklist
+- Customization Checklist
 
 - `src/components/Hero.tsx`: update `heroName`, subtitle badge, tagline, CTA copy.
 - `src/components/Header.tsx` & `Footer.tsx`: replace the displayed name and nav labels if needed.
@@ -125,15 +129,15 @@ Jest + React Testing Library ships with an example Header test (`src/components/
 - `src/components/ContactForm.tsx`: plug real social URLs + email.
 - `public/assets/resume.pdf`: drop your CV generated from `/mnt/data/My_CV (9).pdf`.
 
-## ♿ Accessibility & Performance
+♿ Accessibility & Performance
 
-✔ Semantic HTML (header/main/section/footer)
-✔ Focus-visible outlines + Skip navigation
-✔ Reduced-motion support
-✔ Lazy-load for images
-✔ Minified assets & optimized bundle size
+- Semantic HTML (header/main/section/footer)
+- Focus-visible outlines + Skip navigation
+- Reduced-motion support
+- Lazy-load for images
+- Minified assets & optimized bundle size
 
-## 🏆 Why This Portfolio Stands Out
+🏆 Why This Portfolio Stands Out
 
 - Designed specifically with Backend Developer hiring in mind
 
@@ -143,17 +147,17 @@ Jest + React Testing Library ships with an example Header test (`src/components/
 
   👌 Feel free to clone and customize — no attribution required.
 
-📬 Contact
+📬 Contact :
 
-📧 Email: ahmedashraf01085@gmail.com
-🔗 LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/ahmed-ashraf-758b452b3/)
+📧 Email: ahmedashraf01085@gmail.com  
+🔗 LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/ahmed-ashraf-758b452b3/)  
 🖥 GitHub: [GitHub Profile](https://github.com/Dev-Ahmed-Ashraf)
 
-## ⭐ If you like this project
+⭐ If you like this project
 
-Consider starring the repo 🌟
-Helps grow your presence in the dev community 💼🔥
+- Consider starring the repo.
+- Helps grow your presence in the dev community.
 
-## License
+License:
 
-Feel free to use this portfolio scaffold as-is or modify it for personal/clients projects. No attribution required.\*\*\*
+- Feel free to use this portfolio scaffold as-is or modify it for personal/clients projects. No attribution required.\*\*\*
