@@ -2,7 +2,9 @@
 
 # 🚀 Ahmed Ashraf — Developer Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View-blue?style=for-the-badge)](https://dev-ahmed-ashraf.vercel.app/)
+<a href="https://dev-ahmed-ashraf.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Live%20Demo-View-blue?style=for-the-badge" alt="Live Demo" />
+</a>
 
 </div>
 
