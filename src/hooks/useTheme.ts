@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import {
   applyThemeClass,
   getInitialTheme,
@@ -17,20 +17,38 @@ export const useTheme = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
     const handleChange = () => {
-      setTheme((current) => {
+      try {
         const stored = localStorage.getItem('portfolio-theme') as ThemeMode | null
-        if (stored) return stored
-        return mediaQuery.matches ? 'dark' : 'light'
-      })
+        if (stored) {
+          setTheme(stored)
+          return
+        }
+      } catch {
+        // ignore storage errors (e.g., private mode)
+      }
+      setTheme(mediaQuery.matches ? 'dark' : 'light')
     }
 
-    mediaQuery.addEventListener('change', handleChange)
-    return () => mediaQuery.removeEventListener('change', handleChange)
+    // Modern browsers support addEventListener on MediaQueryList; fallback to addListener for older environments
+    if (typeof mediaQuery.addEventListener === 'function') {
+      mediaQuery.addEventListener('change', handleChange)
+      return () => mediaQuery.removeEventListener('change', handleChange)
+    } else {
+      // Fallback: older browsers implement addListener/removeListener on MediaQueryList
+      const mq = mediaQuery as unknown as MediaQueryList & {
+        addListener?: (h: (e: MediaQueryListEvent) => void) => void
+        removeListener?: (h: (e: MediaQueryListEvent) => void) => void
+      }
+      if (typeof mq.addListener === 'function') {
+        mq.addListener!(handleChange)
+        return () => mq.removeListener!(handleChange)
+      }
+    }
   }, [])
 
-  const toggleTheme = () => {
+  const toggleTheme = useCallback(() => {
     setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
-  }
+  }, [])
 
   return { theme, toggleTheme }
 }

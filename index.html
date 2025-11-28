@@ -4,50 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahmed | .NET Backend Developer Portfolio</title>
+    <title>Ahmed Ashraf | .NET Backend Developer Portfolio</title>
     <meta
       name="description"
-      content=".NET backend engineer building scalable, high-performance RESTful APIs with ASP.NET Core, Azure, and modern DevOps."
+      content="Backend developer specialized in .NET 8, ASP.NET Core, and SQL Server — building scalable APIs with Clean Architecture, CQRS, and secure authentication."
     />
-    <meta property="og:title" content="Ahmed | .NET Backend Developer" />
+
+        <!-- KEYWORDS FOR SEARCH RANKING -->
+    <meta
+      name="keywords"
+      content=".NET, Backend Developer, ASP.NET Core, C#, SQL Server, REST APIs, Clean Architecture, EF Core, CQRS, Software Engineer, Portfolio"
+    />
+
+        <!-- AUTHOR -->
+    <meta name="author" content="Ahmed Ashraf" />
+
+    <!-- CANONICAL LINK (UPDATE AFTER DEPLOY) -->
+    <link rel="canonical" href="https://ahmedashraf.dev" />
+
+    <!-- OPEN GRAPH (SOCIAL SHARE PREVIEW) -->
+    <meta property="og:title" content="Ahmed Ashraf | .NET Backend Developer" />
     <meta
       property="og:description"
-      content="Explore Ahmed's featured ASP.NET Core projects, skills, and experience as a backend engineer."
+      content="Explore Ahmed's featured .NET Core projects, skills, and engineering journey — focused on performance, reliability, and clean code."
     />
+
+
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/og-image.png" />
-    <meta property="og:url" content="https://your-domain.com" />
+    <meta property="og:url" content="https://ahmedashraf.dev" />
+    <meta property="og:image" content="/assets/og-image.png" />
+
+    <!-- TWITTER CARD -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Ahmed | .NET Backend Developer" />
+    <meta name="twitter:title" content="Ahmed Ashraf | Backend Developer" />
     <meta
       name="twitter:description"
-      content=".NET backend engineer crafting resilient APIs on Azure and AWS."
+      content=".NET engineer building high-performance backend systems using ASP.NET Core and Clean Architecture."
     />
-    <meta name="twitter:image" content="/og-image.png" />
-    <link rel="icon" type="image/png" href="/vite.svg" />
+    <meta name="twitter:image" content="/assets/og-image.png" />
+
+    <!-- THEME COLOR FOR BROWSER UI -->
+    <meta name="theme-color" content="#070a12" />
+
+    <!-- ICONS -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+
     <link rel="prefetch" as="image" href="/assets/profile.jpg" />
     <link rel="prefetch" as="document" href="/assets/resume.pdf" />
-    <link rel="prefetch" as="image" href="/assets/projects/hyperion-api.svg" />
-    <link rel="prefetch" as="image" href="/assets/projects/insight-dashboard.svg" />
-    <link rel="prefetch" as="image" href="/assets/projects/reliance-ci.svg" />
+    <link rel="prefetch" as="image" href="/assets/projects/Hotel_Booking_API.png" />
+    <link rel="prefetch" as="image" href="/assets/projects/E-Commerce_Main_Page.png" />
+    <link rel="prefetch" as="image" href="/assets/projects/Driver_License_Management_Project.png" />
+
+
     <script>
       ;(() => {
         try {
-          const stored = localStorage.getItem('portfolio-theme')
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-          const theme = stored || (prefersDark ? 'dark' : 'light')
+          const stored = (() => {
+            try { return localStorage.getItem('portfolio-theme') } catch { return null }
+          })()
+          const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+          const theme = stored === 'dark' || stored === 'light' ? stored : (prefersDark ? 'dark' : 'light')
           document.documentElement.classList.add(theme)
-        } catch (error) {
+        } catch {
           document.documentElement.classList.add('dark')
         }
       })()
     </script>
+    
   </head>
+
   <body>
-    <a href="#main" class="sr-only focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-neon-blue"
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-white/90 focus:shadow-md focus:px-3 focus:py-2 focus:outline-2 focus:outline-offset-2 focus:outline-neon-blue"
       >Skip to content</a
     >
     <div id="root"></div>
+
+    <noscript><div style="padding:1rem;background:#fee;color:#111;text-align:center;">Enable JavaScript to view this site properly.</div></noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

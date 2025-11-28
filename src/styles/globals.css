@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --bg-primary: #f8fafc;
@@ -39,7 +35,7 @@ body {
   min-height: 100vh;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     sans-serif;
-  color: var(--text-primary);
+  /* color: var(--text-primary); */
   background: var(--bg-primary);
   background-image: linear-gradient(
       135deg,
@@ -99,6 +95,7 @@ img {
 
 .gradient-text {
   background-image: linear-gradient(120deg, #2da3ff, #8b5cf6);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -111,7 +108,12 @@ img {
 }
 
 .focus-outline {
-  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon-blue;
+  outline: none;
+}
+
+.focus-outline:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
 }
 
 .sr-only {
@@ -136,3 +138,83 @@ img {
   }
 }
 
+/* Fix Dark Mode Background */
+.dark body {
+  background: linear-gradient(
+      135deg,
+      #040610 0%,
+      #060b16 50%,
+      #0b1220 100%
+    ),
+    radial-gradient(circle at 1px 1px, rgba(139, 92, 246, 0.08) 1px, transparent 0);
+  background-size: cover, 120px 120px;
+}
+
+
+.dark .hero-text {
+  color: #ffffffee;
+  text-shadow: 0 0 12px rgba(0, 194, 255, 0.28);
+}
+
+/* FeaturedProjects Section - Dark Mode Text Colors */
+.dark #projects p {
+  color: #e2e8f0 !important;
+}
+
+.dark #projects h2 {
+  color: #ffffff !important;
+}
+
+/* ProjectCard Dark Mode - Ensure text clarity */
+.dark .project-card-title {
+  color: #ffffff !important;
+}
+
+.dark .project-card-description {
+  color: #e2e8f0 !important;
+}
+
+/* SkillsGrid Dark Mode - Ensure text clarity */
+.dark #skills p {
+  color: #cbd5e1 !important;
+}
+
+.dark #skills h2 {
+  color: #ffffff !important;
+}
+
+.dark #skills h3 {
+  color: #e2dbe8 !important;
+}
+
+/* timeline Dark Mode - Ensure text clarity */
+.dark #timeline p {
+  color: #afb8c4 !important;
+}
+
+.dark #timeline h3 {
+  color: #ffffff !important;
+}
+
+.dark #timeline h2 {
+  color: #ede8e8 !important;
+}
+
+/* contact Dark Mode - Ensure text clarity */
+.dark #contact p {
+  color: #afb8c4 !important;
+}
+
+.dark #contact h3 {
+  color: #b4a7a7 !important;
+}
+
+.dark #contact h2 {
+  color: #ede8e8 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #ffffff !important;
+  opacity: 0.3 !important;
+}

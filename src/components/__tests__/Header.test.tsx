@@ -11,7 +11,7 @@ describe('Header', () => {
   it('invokes toggle handler when theme button is pressed', () => {
     const toggleMock = jest.fn()
     render(<Header theme="dark" onToggleTheme={toggleMock} />)
-    const toggleButton = screen.getByLabelText(/toggle color mode/i)
+    const toggleButton = screen.getByLabelText(/toggle theme/i)
     fireEvent.click(toggleButton)
     expect(toggleMock).toHaveBeenCalledTimes(1)
   })

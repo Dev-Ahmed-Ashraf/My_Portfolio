@@ -4,45 +4,89 @@ export type Project = {
   description: string
   image: string
   techStack: string[]
-  liveUrl: string
   repoUrl: string
   skills: string[]
 }
 
-// Update the projects below with your real case studies, links, and assets.
 export const projects: Project[] = [
   {
-    id: 'hyperion-api',
-    title: 'Hyperion Billing APIs',
+    id: 'hotelbooking-api',
+    title: 'Hotel Booking API (.NET 8)',
     description:
-      'Multi-tenant billing engine serving 30M+ monthly invoices with resilient ASP.NET Core microservices, CQRS, and Azure Service Bus.',
-    image: '/assets/projects/hyperion-api.svg',
-    techStack: ['ASP.NET Core', 'Azure', 'Service Bus', 'PostgreSQL'],
-    liveUrl: 'https://billing.yourdomain.com',
-    repoUrl: 'https://github.com/your-handle/hyperion-billing',
-    skills: ['aspnet', 'azure', 'postgresql', 'distributed'],
+      'Scalable and secure hotel booking REST API built with Clean Architecture. Supports hotel search, room availability, guest reservations, secure Stripe payments, hotel management dashboards, and full role-based authorization. Includes advanced testing, logging, caching, and API documentation.',
+    image: '/assets/projects/Hotel_Booking_API.png',
+    techStack: [
+      'C#',
+      'ASP.NET Core Web API',
+      'EF Core',
+      'SQL Server',
+      'MediatR (CQRS)',
+      'FluentValidation',
+      'AutoMapper',
+      'JWT Authentication',
+      'Serilog',
+      'Stripe',
+      'Docker'
+    ],
+    repoUrl: 'https://github.com/Dev-Ahmed-Ashraf/Hotel_Booking_API',
+    skills: [
+    'Clean Architecture',
+    'CQRS & MediatR',
+    'JWT & Role-Based Security',
+    'Error Handling & Logging',
+    'Integration Testing',
+    'Performance Optimization']
   },
   {
-    id: 'insight-dashboard',
-    title: 'InsightOps Observability',
+    id: 'ecommerce-mvc',
+    title: 'E-Commerce Platform (MVC)',
     description:
-      'End-to-end telemetry pipeline streaming 2B+ logs/day via Event Hubs, ElasticSearch, and Grafana dashboards for proactive SRE insights.',
-    image: '/assets/projects/insight-dashboard.svg',
-    techStack: ['.NET 8', 'Elastic', 'Grafana', 'Redis'],
-    liveUrl: 'https://insightops.yourdomain.com',
-    repoUrl: 'https://github.com/your-handle/insight-ops',
-    skills: ['dotnet', 'observability', 'redis', 'grafana'],
+      'A full multi-vendor e-commerce platform delivering a complete shopping experience — including authentication with roles & 2FA, advanced product catalog with search and variations, smart shopping cart with discounts, invoiced checkout flow, order and shipping management, vendor dashboards, and admin analytics.',
+    image: '/assets/projects/E-Commerce_Main_Page.png',
+    techStack: [
+      'C#',
+      'ASP.NET Core MVC',
+      'EF Core',
+      'LINQ',
+      'SQL Server',
+      'Identity',
+      'Html',
+      'css',
+      'Javascript',
+      'jQuery',
+      'Ajax',
+      'Bootstrap 5',
+      'Chart.js'
+    ],
+    repoUrl: 'https://github.com/Dev-Ahmed-Ashraf/E-Commerce_Project',
+    skills: [    'Authentication & Authorization',
+    'Authentication & Authorization',
+    'Multi-Vendor System',
+    'Admin Analytics Dashboard',
+    'Order & Inventory Management',
+    'Search & Performance Optimization']
   },
   {
-    id: 'reliance-ci',
-    title: 'Reliance CI/CD Platform',
+    id: 'driving-license-app',
+    title: 'Driving License Management System',
     description:
-      'GitOps inspired delivery platform orchestrating Kubernetes rollouts with ArgoCD, Azure DevOps pipelines, and policy-gated releases.',
-    image: '/assets/projects/reliance-ci.svg',
-    techStack: ['Kubernetes', 'ArgoCD', 'Azure DevOps', 'Docker'],
-    liveUrl: 'https://reliance.yourdomain.com',
-    repoUrl: 'https://github.com/your-handle/reliance-platform',
-    skills: ['devops', 'kubernetes', 'docker', 'azure'],
-  },
+      'A complete government-grade desktop system for managing driver licensing workflows. Supports license issuance/renewals, international licenses, replacement for lost/damaged licenses, license detention and release, test scheduling (Vision/Written/practical), application processing, and full driver history tracking — secured with role-based access control and comprehensive reporting.',
+    image: '/assets/projects/Driver_License_Management_Project.png',
+    techStack: [
+      'C#',
+      '.NET Framework (WinForms)',
+      'SQL Server',
+      'ADO.NET',
+      'Layered Architecture'
+    ],
+    repoUrl: 'https://github.com/Dev-Ahmed-Ashraf/Driver-License-Management-System',
+    skills: [
+    'Desktop Development',
+    'Authentication & Authorization',
+    'Database Management',
+    'Reporting System',
+    'CRUD Operations']
+  }
 ]
+
 
