@@ -1,20 +1,20 @@
-# 🚀 Ahmed Ashraf — Developer Portfolio
+🚀 Ahmed Ashraf — Developer Portfolio
 
 Modern React (Vite) + TailwindCSS + Framer Motion and single-page portfolio tailored for .NET backend roles. It delivers neon blue/purple styling, Framer Motion micro-interactions, Tailwind-driven theming, and EmailJS-powered contact forms — all optimized for recruiters and hiring managers.
 
 🌟 Live Preview
 
-🔗 Demo: (Add link after deployment).
-🧑‍💻 GitHub: (You’re here!).
+- Demo: (Add link after deployment).
+- GitHub: (You’re here!).
 
 ✨ Tech Stack
 
-Frontend: React, TypeScript, Vite.
-Styling: TailwindCSS, CSS Variables.
-Animations: Framer Motion.
-Contact: EmailJS.
-Tooling: ESLint, Prettier, Git Hooks.
-Deployment: Vercel 🚀.
+- Frontend: React, TypeScript, Vite.
+- Styling: TailwindCSS, CSS Variables.
+- Animations: Framer Motion.
+- Contact: EmailJS.
+- Tooling: ESLint, Prettier, Git Hooks.
+- Deployment: Vercel.
 
 🎯 Features
 
@@ -130,11 +130,11 @@ Jest + React Testing Library ships with an example Header test (`src/components/
 
 ♿ Accessibility & Performance
 
-✔ Semantic HTML (header/main/section/footer).
-✔ Focus-visible outlines + Skip navigation.
-✔ Reduced-motion support.
-✔ Lazy-load for images.
-✔ Minified assets & optimized bundle size.
+- Semantic HTML (header/main/section/footer).
+- Focus-visible outlines + Skip navigation.
+- Reduced-motion support.
+- Lazy-load for images.
+- Minified assets & optimized bundle size.
 
 🏆 Why This Portfolio Stands Out
 
@@ -158,4 +158,4 @@ Jest + React Testing Library ships with an example Header test (`src/components/
 - Helps grow your presence in the dev community.
 
 License:
-Feel free to use this portfolio scaffold as-is or modify it for personal/clients projects. No attribution required.\*\*\*
+- Feel free to use this portfolio scaffold as-is or modify it for personal/clients projects. No attribution required.\*\*\*
