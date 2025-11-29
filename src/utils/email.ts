@@ -22,8 +22,8 @@ export const sendContactEmail = async (payload: ContactPayload) => {
     VITE_EMAILJS_SERVICE_ID,
     VITE_EMAILJS_TEMPLATE_ID,
     {
-      from_name: payload.fullName,
-      reply_to: payload.email,
+      fullName: payload.fullName,
+      email: payload.email,
       message: payload.message,
       to_email: VITE_EMAILJS_TO_EMAIL ?? 'hello@example.com',
     },
