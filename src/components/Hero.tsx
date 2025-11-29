@@ -246,10 +246,9 @@ const Hero = ({ onViewProjects }: HeroProps) => {
             <div className="pointer-events-none absolute -inset-1 rounded-[34px] bg-gradient-to-br from-sky-400/40 via-transparent to-purple-500/30" />
             <img
               src="/assets/profile.jpg"
-              srcSet="/assets/profile.jpg 1x, /assets/profile@2x.jpg 2x"
               alt="Portrait of Ahmed Ashraf"
               className="relative h-full w-full object-cover"
-              loading="lazy"
+              loading="eager"
               decoding="async"
             />
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent dark:from-slate-950/90" />
