@@ -85,9 +85,12 @@ const Hero = ({ onViewProjects }: HeroProps) => {
                 animate={shouldReduceMotion ? "visible" : ["visible", "float"]}
                 aria-hidden="true"
                 className={char === " "
-                  ? "inline-block w-2 sm:w-3"
-                  : "inline-block bg-gradient-to-r from-sky-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent"}
-              >
+  ? "inline-block w-2 sm:w-3"
+  : "inline-block text-slate-400 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-blue-300 dark:to-purple-400"}
+>
+
+
+
                 {char}
               </motion.span>
             ))}

@@ -9,57 +9,57 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project, highlighted }: ProjectCardProps) => {
   // Tech stack colors mapping - aligned with actual projects
-const getTechColor = (tech: string) => {
-  const techColors: Record<string, string> = {
-    // ======================
-    // 🟣 .NET & C# Ecosystem
-    // ======================
-    'C#': 'from-purple-700 to-purple-500',
-    'ASP.NET Core Web API': 'from-purple-600 to-purple-400',
-    'ASP.NET Core MVC': 'from-purple-600 to-purple-400',
-    '.NET Framework (WinForms)': 'from-purple-700 to-purple-500',
+// const getTechColor = (tech: string) => {
+//   const techColors: Record<string, string> = {
+//     // ======================
+//     // 🟣 .NET & C# Ecosystem
+//     // ======================
+//     'C#': 'from-purple-700 to-purple-500',
+//     'ASP.NET Core Web API': 'from-purple-600 to-purple-400',
+//     'ASP.NET Core MVC': 'from-purple-600 to-purple-400',
+//     '.NET Framework (WinForms)': 'from-purple-700 to-purple-500',
 
-    // ======================
-    // 🔵 Databases & ORM
-    // ======================
-    'SQL Server': 'from-blue-700 to-blue-500',
-    'EF Core': 'from-blue-600 to-cyan-500',
-    'ADO.NET': 'from-blue-700 to-blue-500',
-    'LINQ': 'from-cyan-600 to-teal-400',
+//     // ======================
+//     // 🔵 Databases & ORM
+//     // ======================
+//     'SQL Server': 'from-blue-700 to-blue-500',
+//     'EF Core': 'from-blue-600 to-cyan-500',
+//     'ADO.NET': 'from-blue-700 to-blue-500',
+//     'LINQ': 'from-cyan-600 to-teal-400',
 
-    // ======================
-    // 🧬 Architecture & Patterns
-    // ======================
-    'MediatR (CQRS)': 'from-indigo-600 to-indigo-400',
-    'FluentValidation': 'from-indigo-600 to-indigo-400',
-    'Layered Architecture': 'from-indigo-700 to-indigo-500',
-    'JWT Authentication': 'from-slate-700 to-slate-500',
-    'Serilog': 'from-slate-700 to-slate-500',
+//     // ======================
+//     // 🧬 Architecture & Patterns
+//     // ======================
+//     'MediatR (CQRS)': 'from-indigo-600 to-indigo-400',
+//     'FluentValidation': 'from-indigo-600 to-indigo-400',
+//     'Layered Architecture': 'from-indigo-700 to-indigo-500',
+//     'JWT Authentication': 'from-slate-700 to-slate-500',
+//     'Serilog': 'from-slate-700 to-slate-500',
 
-    // ======================
-    // 🌍 UI + Frontend
-    // ======================
-    'HTML': 'from-red-600 to-rose-500',
-    'CSS': 'from-blue-500 to-sky-400',
-    'JavaScript': 'from-yellow-500 to-amber-400',
-    'jQuery': 'from-blue-400 to-blue-300',
-    'Ajax': 'from-green-500 to-teal-400',
-    'Bootstrap 5': 'from-violet-600 to-purple-500',
-    'Chart.js': 'from-emerald-500 to-teal-400',
+//     // ======================
+//     // 🌍 UI + Frontend
+//     // ======================
+//     'HTML': 'from-red-600 to-rose-500',
+//     'CSS': 'from-blue-500 to-sky-400',
+//     'JavaScript': 'from-yellow-500 to-amber-400',
+//     'jQuery': 'from-blue-400 to-blue-300',
+//     'Ajax': 'from-green-500 to-teal-400',
+//     'Bootstrap 5': 'from-violet-600 to-purple-500',
+//     'Chart.js': 'from-emerald-500 to-teal-400',
 
-    // ======================
-    // 💳 Payments & Integrations
-    // ======================
-    'Stripe': 'from-pink-600 to-rose-400',
+//     // ======================
+//     // 💳 Payments & Integrations
+//     // ======================
+//     'Stripe': 'from-pink-600 to-rose-400',
 
-    // ======================
-    // 🐳 Deployment & DevOps
-    // ======================
-    'Docker': 'from-blue-600 to-cyan-500',
-  }
+//     // ======================
+//     // 🐳 Deployment & DevOps
+//     // ======================
+//     'Docker': 'from-blue-600 to-cyan-500',
+//   }
 
-  return techColors[tech] || 'from-slate-700 to-slate-500'
-}
+//   return techColors[tech] || 'from-slate-700 to-slate-500'
+// }
 
   return (
     <motion.article
@@ -120,7 +120,8 @@ const getTechColor = (tech: string) => {
                 initial={{ opacity: 0, y: 5 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.05, duration: 0.3 }}
-                className={`inline-flex items-center gap-1 rounded-full bg-gradient-to-r ${getTechColor(tech)} px-3 py-1.5 text-xs font-semibold text-white shadow-[0_4px_12px_rgba(0,0,0,0.2)] group-hover:shadow-[0_6px_16px_rgba(0,0,0,0.3)] transition-all duration-300`}
+                className="inline-flex items-center gap-1 rounded-full bg-slate-400 dark:bg-blue-500 px-3 py-1.5 text-xs font-semibold text-slate-100 shadow-sm hover:shadow-md transition-all duration-300"
+
               >
                 {tech}
               </motion.span>

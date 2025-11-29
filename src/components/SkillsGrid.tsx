@@ -133,7 +133,7 @@ const SkillsGrid = ({ activeSkill, onSelectSkill }: SkillsGridProps) => {
                   >
                     {cluster.title}
                   </motion.h3>
-                  <motion.span
+                  {/* <motion.span
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.4, delay: idx * 0.1 + 0.4 }}
@@ -141,7 +141,7 @@ const SkillsGrid = ({ activeSkill, onSelectSkill }: SkillsGridProps) => {
                     className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-white text-sm font-bold shadow-lg"
                   >
                     {cluster.items.length}
-                  </motion.span>
+                  </motion.span> */}
                 </div>
 
                 {/* Cluster Description */}
