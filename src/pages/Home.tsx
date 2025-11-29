@@ -24,6 +24,7 @@ const LoadingBlock = ({ label = 'Loading' }: { label?: string }) => (
 const Home = ({ theme, onToggleTheme }: HomeProps) => {
   const [highlightSkill, setHighlightSkill] = useState<string | null>(null)
 
+  
   // Accessibility: quick skip link to main content for keyboard users
   useEffect(() => {
     document.title = 'Ahmed Ashraf | .NET Backend Developer'
@@ -55,9 +56,13 @@ const Home = ({ theme, onToggleTheme }: HomeProps) => {
       <main id="main" role="main">
         <Hero onViewProjects={handleScrollToProjects} />
 
-        <Suspense fallback={<LoadingBlock label="Projects" />}>
-          <FeaturedProjects highlightSkill={highlightSkill} />
-        </Suspense>
+<Suspense fallback={<LoadingBlock label="Projects" />}>
+  <FeaturedProjects
+    highlightSkill={highlightSkill}
+    onSelectSkill={handleSelectSkill}  // ⬅⬅ إضافـة مهمة
+  />
+</Suspense>
+
 
         <Suspense fallback={<LoadingBlock label="Skills" />}>
           <SkillsGrid activeSkill={highlightSkill} onSelectSkill={handleSelectSkill} />

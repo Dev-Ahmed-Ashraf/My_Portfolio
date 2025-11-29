@@ -5,22 +5,24 @@ import { skillClusters } from '../data/skills'
 
 type FeaturedProjectsProps = {
   highlightSkill: string | null
+  onSelectSkill: (skill: string | null) => void
 }
 
-const FeaturedProjects = ({ highlightSkill }: FeaturedProjectsProps) => {
+const FeaturedProjects = ({ highlightSkill, onSelectSkill }: FeaturedProjectsProps) => {
   const selectedSkill = highlightSkill
-    ? skillClusters.flatMap((cluster) => cluster.items).find((item) => item.id === highlightSkill)
+    ? skillClusters.flatMap(c => c.items).find(i => i.id === highlightSkill)
     : null
 
-  const shouldFilterBySkill = Boolean(highlightSkill && selectedSkill)
+  const shouldFilter = Boolean(selectedSkill)
 
-  const filteredProjects = shouldFilterBySkill
-    ? projects.filter((project) => selectedSkill!.projects.includes(project.id))
+  const filteredProjects = shouldFilter
+    ? projects.filter(p => selectedSkill!.projects.includes(p.id))
     : projects
 
   const highlightedProjects = new Set(
-    shouldFilterBySkill ? filteredProjects.map((project) => project.id) : [],
+    shouldFilter ? filteredProjects.map(p => p.id) : []
   )
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -93,6 +95,22 @@ const FeaturedProjects = ({ highlightSkill }: FeaturedProjectsProps) => {
             Production-grade APIs with focus on uptime, telemetry, and developer experience. Each project demonstrates clean architecture, best practices, and enterprise-level design patterns.
           </motion.p>
         </motion.div>
+
+        {/* Skill Filter Button */}
+        {shouldFilter && (
+          <motion.button
+            onClick={() => onSelectSkill(null)}
+            className="ml-auto mb-4 focus-outline px-5 py-2.5 rounded-full 
+                      text-sm font-semibold uppercase tracking-wide
+                      border border-blue-500/40 dark:border-blue-400/30
+                      text-blue-600 dark:text-blue-300
+                      hover:bg-blue-50 dark:hover:bg-blue-900/20
+                      transition-all duration-300"
+            aria-label="Show all projects again"
+          >
+            ↺ Show All
+          </motion.button>
+        )}
 
         {/* Projects Grid */}
 <motion.div

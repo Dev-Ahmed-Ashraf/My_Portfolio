@@ -86,19 +86,6 @@ const SkillsGrid = ({ activeSkill, onSelectSkill }: SkillsGridProps) => {
           >
             Enterprise-level expertise spanning architecture patterns, database technologies, and enterprise frameworks. Click any skill to see related projects that demonstrate real-world implementation.
           </motion.p>
-
-          {/* Clear Filter Button */}
-          <motion.button
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }}
-            onClick={() => onSelectSkill(null)}
-            className="mt-6 focus-outline inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold text-sm uppercase tracking-wide border border-purple-200/50 dark:border-purple-400/30 text-purple-600 dark:text-purple-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-all duration-300 group"
-          >
-            <span>✕</span>
-            <span>Clear filter</span>
-          </motion.button>
         </motion.div>
 
         {/* Skills Grid */}
