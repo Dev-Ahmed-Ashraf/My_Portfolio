@@ -10,6 +10,36 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  id: 'onlinecourses-notifications',
+  title: 'Online Courses Notifications Microservice',
+  description:
+    'Enterprise-grade notifications microservice for Online Courses Platform. Supports multi-channel delivery (in-app, email, push) with event-driven architecture via RabbitMQ, Outbox Pattern for reliable delivery, scheduled notifications, direct messaging between users, and full user preference management per notification type.',
+  image: '/assets/projects/OnlineCourses_Notifications.png',
+  techStack: [
+    'C#',
+    'ASP.NET Core Web API',
+    'EF Core',
+    'SQL Server',
+    'Stored Procedures (TVPs)',
+    'MediatR (CQRS)',
+    'FluentValidation',
+    'MassTransit',
+    'RabbitMQ',
+    'Firebase Admin SDK (FCM)'
+  ],
+  repoUrl: 'https://github.com/Dev-Ahmed-Ashraf/OnlineCourseSystem.Notifications',
+  skills: [
+    'Microservices & Event-Driven Architecture',
+    'Outbox Pattern & Reliable Delivery',
+    'Multi-Channel Notifications (In-App / Email / Push)',
+    'RabbitMQ Messaging (MassTransit)',
+    'Scheduled Notifications & Background Workers',
+    'User Preferences Management',
+    'Stored Procedures & TVPs (SQL Server)',
+    'CQRS & MediatR'
+  ]
+  },
+  {
     id: 'hotelbooking-api',
     title: 'Hotel Booking API (.NET 8)',
     description:
@@ -59,7 +89,7 @@ export const projects: Project[] = [
       'Chart.js'
     ],
     repoUrl: 'https://github.com/Dev-Ahmed-Ashraf/E-Commerce_Project',
-    skills: [    'Authentication & Authorization',
+    skills: [
     'Authentication & Authorization',
     'Multi-Vendor System',
     'Admin Analytics Dashboard',
