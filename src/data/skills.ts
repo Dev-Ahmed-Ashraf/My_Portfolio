@@ -17,8 +17,8 @@ export const skillClusters: SkillCluster[] = [
     title: 'Backend Frameworks',
     description: 'Building scalable APIs and full-stack apps using modern .NET technologies.',
     items: [
-      { id: 'csharp', label: 'C#', level: 92, projects: ['hotelbooking-api', 'ecommerce-mvc', 'driving-license-app'] },
-      { id: 'aspnet-core-api', label: 'ASP.NET Core Web API', level: 88, projects: ['hotelbooking-api'] },
+      { id: 'csharp', label: 'C#', level: 92, projects: ['hotelbooking-api', 'ecommerce-mvc', 'driving-license-app', 'onlinecourses-notifications'] },
+      { id: 'aspnet-core-api', label: 'ASP.NET Core Web API', level: 88, projects: ['hotelbooking-api', 'onlinecourses-notifications'] },
       { id: 'aspnet-core-mvc', label: 'ASP.NET Core MVC', level: 85, projects: ['ecommerce-mvc'] },
       { id: 'windows-forms', label: '.NET Windows Forms', level: 78, projects: ['driving-license-app'] },
     ]
@@ -28,9 +28,9 @@ export const skillClusters: SkillCluster[] = [
     title: 'Databases & ORMs',
     description: 'Efficient and secure database operations using SQL Server and EF Core.',
     items: [
-      { id: 'sql-server', label: 'SQL Server', level: 90, projects: ['hotelbooking-api', 'ecommerce-mvc', 'driving-license-app'] },
-      { id: 'ef-core', label: 'Entity Framework Core', level: 87, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
-      { id: 'linq', label: 'LINQ', level: 86, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
+      { id: 'sql-server', label: 'SQL Server', level: 90, projects: ['hotelbooking-api', 'ecommerce-mvc', 'driving-license-app', 'onlinecourses-notifications'] },
+      { id: 'ef-core', label: 'Entity Framework Core', level: 87, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
+      { id: 'linq', label: 'LINQ', level: 86, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
       { id: 'ado-net', label: 'ADO.NET', level: 80, projects: ['driving-license-app'] },
     ]
   },
@@ -39,9 +39,9 @@ export const skillClusters: SkillCluster[] = [
     title: 'Architecture & Design Patterns',
     description: 'Clean and maintainable code using modern architectural standards.',
     items: [
-      { id: 'clean-arch', label: 'Clean Architecture', level: 88, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
-      { id: 'cqrs-mediator', label: 'CQRS + MediatR', level: 83, projects: ['hotelbooking-api'] },
-      { id: 'repo-pattern', label: 'Repository Pattern', level: 91, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
+      { id: 'clean-arch', label: 'Clean Architecture', level: 88, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
+      { id: 'cqrs-mediator', label: 'CQRS + MediatR', level: 83, projects: ['hotelbooking-api', 'onlinecourses-notifications'] },
+      { id: 'repo-pattern', label: 'Repository Pattern', level: 91, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
       { id: 'layered-arch', label: 'Layered Architecture', level: 82, projects: ['driving-license-app'] },
     ]
   },
@@ -64,7 +64,7 @@ export const skillClusters: SkillCluster[] = [
       { id: 'integration-test', label: 'Integration Testing', level: 80, projects: ['hotelbooking-api'] },
       { id: 'unit-test', label: 'Unit Testing', level: 75, projects: ['hotelbooking-api'] },
       { id: 'serilog', label: 'Serilog Logging', level: 89, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
-      { id: 'exception-handling', label: 'Error & Exception Handling', level: 85, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
+      { id: 'exception-handling', label: 'Error & Exception Handling', level: 85, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
     ]
   },
   {
@@ -75,7 +75,7 @@ export const skillClusters: SkillCluster[] = [
       { id: 'stripe', label: 'Stripe Payments Integration', level: 78, projects: ['hotelbooking-api'] },
       { id: 'admin-dashboard', label: 'Admin Dashboard & Reports', level: 85, projects: ['ecommerce-mvc', 'hotelbooking-api'] },
       { id: 'devtools', label: 'Developer Tools (Swagger, Postman)', level: 87, projects: ['hotelbooking-api'] },
-      { id: 'git', label: 'Git / GitHub Workflow', level: 85, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
+      { id: 'git', label: 'Git / GitHub Workflow', level: 85, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
     ]
   }
 ]
