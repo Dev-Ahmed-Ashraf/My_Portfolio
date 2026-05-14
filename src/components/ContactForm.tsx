@@ -131,7 +131,7 @@ setFormState('error')
                 Download CV
               </h3>
               <motion.a
-                href="/assets/resume.pdf"
+                href="/assets/Ahmed_Ashraf_Junior_Full_Stack_Developer.pdf"
                 download
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}

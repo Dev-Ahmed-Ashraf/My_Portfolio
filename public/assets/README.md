@@ -3,7 +3,7 @@
 This folder contains the image and PDF assets referenced by the portfolio site. Replace the placeholder files below with your real files, keeping the same filenames so code references remain valid.
 
 - Replace `profile.jpg` with your portrait/headshot (recommended: 800×800 or 1200×1200 px, JPEG or webp, optimized under ~500KB).
-- Replace `resume.pdf` with your up-to-date resume/CV (PDF).
+- Replace `Ahmed_Ashraf_Junior_Full_Stack_Developer.pdf` with your up-to-date Ahmed_Ashraf_Junior_Full_Stack_Developer/CV (PDF).
 - If you have project screenshots, place them in the `projects/` subfolder using the same filenames referenced in `src/data/projects.ts`.
 - Icon files (e.g., `C_Icon.png`, `.NET_Icon.png`) should be placed here or in `src/assets/` depending on your build; prefer SVG/PNG at 64×64 or 128×128 for crisp display.
 

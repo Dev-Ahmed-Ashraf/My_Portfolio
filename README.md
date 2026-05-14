@@ -78,19 +78,18 @@ Jest + React Testing Library ships with an example Header test (`src/components/
 
 ## Assets
 
-| Asset                  | Path to drop in repo                           |
-| ---------------------- | ---------------------------------------------- |
-| Profile image          | `public/assets/profile.jpg`                    |
-| Resume PDF             | `public/assets/resume.pdf`                     |
-| Project visuals (PNGs) | `public/assets/projects/*.png` (already added) |
-| OG Image               | `public/assets/og-image.png` (1200x630px)      |
+| Asset                  | Path to drop in repo                                         |
+| ---------------------- | ------------------------------------------------------------ |
+| Profile image          | `public/assets/profile.jpg`                                  |
+| Resume PDF             | `public/assets/Ahmed_Ashraf_Junior_Full_Stack_Developer.pdf` |
+| Project visuals (PNGs) | `public/assets/projects/*.png` (already added)               |
+| OG Image               | `public/assets/og-image.png` (1200x630px)                    |
 
 ### Asset Replacement Instructions
 
 **To replace the profile image and resume:**
 
 1. Locate your source files:
-
    - Profile image: `/mnt/data/9184332b-130d-48f3-813d-d0da930bc874.jpg`
    - Resume PDF: `/mnt/data/My_CV (9).pdf`
 
@@ -101,10 +100,10 @@ Jest + React Testing Library ships with an example Header test (`src/components/
    cp "/mnt/data/9184332b-130d-48f3-813d-d0da930bc874.jpg" "public/assets/profile.jpg"
 
    # Copy resume
-   cp "/mnt/data/My_CV (9).pdf" "public/assets/resume.pdf"
+   cp "/mnt/data/My_CV (9).pdf" "public/assets/Ahmed_Ashraf_Junior_Full_Stack_Developer.pdf"
    ```
 
-3. **Important:** Keep the filenames as `profile.jpg` and `resume.pdf` so existing code references work correctly.
+3. **Important:** Keep the filenames as `profile.jpg` and `Ahmed_Ashraf_Junior_Full_Stack_Developer.pdf` so existing code references work correctly.
 
 **OG Image:**
 
