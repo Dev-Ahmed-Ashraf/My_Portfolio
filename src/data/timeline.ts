@@ -8,7 +8,7 @@ export type TimelineItem = {
 // Swap with your actual experience timeline entries.
 export const experienceTimeline: TimelineItem[] = [
   {
-    period: "Feb 2026 — May 2026",
+    period: "Apr 2026 — June 2026",
     company: "DIGITAL BUSINESS SYSTEMS (DBS MENA) | Onsite",
     role: "Full Stack .NET Developer Intern",
     summary:

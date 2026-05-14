@@ -114,8 +114,8 @@ const Hero = ({ onViewProjects }: HeroProps) => {
             className="mt-8 flex flex-wrap items-center justify-center gap-2 lg:justify-start"
           >
   {[
-    { img: "/assets/C_Icon.png", label: "C#" },
     { img: "/assets/.NET_Icon.png", label: "ASP.NET Core" },
+    { img: "/assets/Angular_Icon.png", label: "Angular" },
     { icon: <FaDatabase className="text-sky-500 dark:text-sky-400" />, label: "SQL Server" },
   ].map(({ img, icon, label }) => (
     <motion.div
@@ -196,7 +196,7 @@ const Hero = ({ onViewProjects }: HeroProps) => {
     },
     {
       icon: <FaLinkedin />,
-      href: "https://www.linkedin.com/in/ahmed-ashraf-758b452b3/",
+      href: "https://www.linkedin.com/in/dev-ahmed-ashraf/",
       label: "LinkedIn",
       bgColor: "from-blue-500/20 to-cyan-500/20 dark:from-blue-900/40 dark:to-cyan-900/40",
       borderColor: "border-blue-300/40 dark:border-blue-700/40",
