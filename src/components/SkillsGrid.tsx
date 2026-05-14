@@ -73,7 +73,7 @@ const SkillsGrid = ({ activeSkill, onSelectSkill }: SkillsGridProps) => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white"
           >
-            Backend <span className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 dark:from-purple-300 dark:via-blue-300 dark:to-purple-300 bg-clip-text text-transparent">toolkit</span>
+            Technical <span className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 dark:from-purple-300 dark:via-blue-300 dark:to-purple-300 bg-clip-text text-transparent">toolkit</span>
           </motion.h2>
 
           {/* Description */}
@@ -84,7 +84,7 @@ const SkillsGrid = ({ activeSkill, onSelectSkill }: SkillsGridProps) => {
             viewport={{ once: true }}
             className="text-lg text-slate-600 dark:text-slate-200 max-w-2xl leading-relaxed"
           >
-            Enterprise-level expertise spanning architecture patterns, database technologies, and enterprise frameworks. Click any skill to see related projects that demonstrate real-world implementation.
+            A focused stack across frontend, backend, architecture, databases, security, distributed systems, and delivery workflows. Select any skill to highlight portfolio projects that demonstrate practical implementation.
           </motion.p>
         </motion.div>
 

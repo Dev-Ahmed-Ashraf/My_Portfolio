@@ -64,7 +64,7 @@ const Hero = ({ onViewProjects }: HeroProps) => {
             className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-gradient-to-r from-sky-500 via-blue-500 to-purple-500 px-4 py-1 text-[11px] font-bold uppercase tracking-[0.25em] text-white shadow-[0_0_18px_rgba(89,185,255,0.7),0_0_28px_rgba(128,90,213,0.5)] backdrop-blur-md dark:border-white/10"
 >
             <span className="h-2 w-2 animate-pulse rounded-full bg-white shadow-[0_0_10px_white]" />
-  .NET Backend Developer
+  Full Stack .NET Developer
 </motion.span>
 
           {/* الاسم بالحروف المتحركة */}
@@ -103,7 +103,7 @@ const Hero = ({ onViewProjects }: HeroProps) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            Building <span className="font-semibold text-sky-500 dark:text-sky-400">scalable, high-performance</span> RESTful APIs and MVC applications using ASP.NET Core, EF Core, and Clean Architecture — focused on performance, reliability, and clean engineering.
+            Full Stack .NET Developer with hands-on experience building scalable web applications using ASP.NET Core and Angular. Specialized in secure RESTful APIs, responsive frontend delivery, and enterprise architecture patterns including Clean Architecture, CQRS, and RBAC.
           </motion.p>
 
           {/* Tech icons */}

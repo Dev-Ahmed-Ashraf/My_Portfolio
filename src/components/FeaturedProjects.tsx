@@ -81,7 +81,7 @@ const FeaturedProjects = ({ highlightSkill, onSelectSkill }: FeaturedProjectsPro
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white"
           >
-            Built for <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 dark:from-blue-200 dark:via-purple-500 dark:to-blue-700 bg-clip-text text-transparent">scale</span>
+            Selected <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 dark:from-blue-200 dark:via-purple-500 dark:to-blue-700 bg-clip-text text-transparent">work</span>
           </motion.h2>
 
           {/* Description */}
@@ -90,9 +90,9 @@ const FeaturedProjects = ({ highlightSkill, onSelectSkill }: FeaturedProjectsPro
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-md   text-slate-600 dark:text-slate-600 max-w-2xl leading-relaxed"
+            className="text-md text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed"
           >
-            Production-grade APIs with focus on uptime, telemetry, and developer experience. Each project demonstrates clean architecture, best practices, and enterprise-level design patterns.
+            A portfolio of backend and full-stack systems built with ASP.NET Core, SQL Server, and modern architecture patterns. Each project emphasizes security, scalability, maintainability, and production-ready engineering practices.
           </motion.p>
         </motion.div>
 

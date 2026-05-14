@@ -23,10 +23,10 @@ const Timeline = () => {
             </p>
           </div>
           <h2 className="mt-2 text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100">
-            Professional & Project Experience
+            Experience & Education
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-300 max-w-2xl">
-            A concise timeline showcasing my learning journey, personal projects, and the practical experience I built while studying and self-learning.
+            Internship experience and academic background focused on delivering secure, scalable, and maintainable full-stack .NET solutions.
           </p>
         </div>
 

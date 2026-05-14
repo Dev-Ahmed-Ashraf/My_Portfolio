@@ -1,33 +1,31 @@
 export type TimelineItem = {
-  period: string
-  company: string
-  role: string
-  summary: string
-}
+  period: string;
+  company: string;
+  role: string;
+  summary: string;
+};
 
 // Swap with your actual experience timeline entries.
 export const experienceTimeline: TimelineItem[] = [
   {
-    period: '2024 — Present',
-    company: 'Self-Directed Projects (GitHub)',
-    role: '.NET Backend Developer — Personal Projects',
+    period: "Feb 2026 — May 2026",
+    company: "DIGITAL BUSINESS SYSTEMS (DBS MENA) | Onsite",
+    role: "Full Stack .NET Developer Intern",
     summary:
-      "Building real-world backend systems using .NET, Web APIs, MVC, CQRS, EF Core, authentication, caching, logging, and integration testing. Delivering high-quality, scalable solutions showcased in published GitHub projects.",
+      "Contributed to a Product Management System using ASP.NET Core and Angular. Developed secure RESTful APIs with Clean Architecture, CQRS, and EF Core, and built frontend features with TypeScript, RxJS, route guards, and interceptors. Implemented JWT, refresh tokens, RBAC, pagination, filtering, status tracking, and product history features.",
   },
   {
-    period: '2023 — 2024',
-    company: 'Faculty of Computers & Information',
-    role: 'Computer Science Student',
+    period: "Sep 2025 — Jan 2026",
+    company: "CodeWay | Remote",
+    role: "Backend Developer Intern",
     summary:
-      'Developing strong foundations in data structures, OOP, databases, algorithms, and software architecture. Applied academic concepts to practical full-stack .NET solutions.',
+      "Built the Notifications Microservice for an Online Courses Platform using ASP.NET Core and SQL Server. Implemented event-driven processing with RabbitMQ and MassTransit, asynchronous workflows for in-app/email/push notifications, retry handling, and maintainable architecture with CQRS, Outbox Pattern, FluentValidation, and background workers.",
   },
   {
-    period: '2022 — 2023',
-    company: 'Self-Learning & Applied Practice',
-    role: 'Independent Learner',
+    period: "Sep 2023 — May 2027",
+    company: "Tanta University, Tanta, Egypt",
+    role: "Bachelor of Computer Science and Information Technology",
     summary:
-      'Started from foundational programming in C++ and problem solving, then advanced to Data Structures, Databases and C#. Completed my first real production-like project: a full Driving License Management System using Windows Forms, SQL Server, and layered architecture.',
+      "Academic foundation in software engineering, algorithms, databases, and systems design, continuously applied through hands-on full-stack and backend-focused .NET projects.",
   },
-]
-
-
+];

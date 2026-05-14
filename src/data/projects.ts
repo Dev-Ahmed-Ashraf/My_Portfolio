@@ -1,122 +1,141 @@
 export type Project = {
-  id: string
-  title: string
-  description: string
-  image: string
-  techStack: string[]
-  repoUrl: string
-  skills: string[]
-}
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  techStack: string[];
+  repoUrl: string;
+  skills: string[];
+};
 
 export const projects: Project[] = [
   {
-  id: 'onlinecourses-notifications',
-  title: 'Online Courses Notifications Microservice',
-  description:
-    'Enterprise-grade notifications microservice for Online Courses Platform. Supports multi-channel delivery (in-app, email, push) with event-driven architecture via RabbitMQ, Outbox Pattern for reliable delivery, scheduled notifications, direct messaging between users, and full user preference management per notification type.',
-  image: '/assets/projects/OnlineCourses_Notifications.png',
-  techStack: [
-    'C#',
-    'ASP.NET Core Web API',
-    'EF Core',
-    'SQL Server',
-    'Stored Procedures (TVPs)',
-    'MediatR (CQRS)',
-    'FluentValidation',
-    'MassTransit',
-    'RabbitMQ',
-    'Firebase Admin SDK (FCM)'
-  ],
-  repoUrl: 'https://github.com/Dev-Ahmed-Ashraf/OnlineCourseSystem.Notifications',
-  skills: [
-    'Microservices & Event-Driven Architecture',
-    'Outbox Pattern & Reliable Delivery',
-    'Multi-Channel Notifications (In-App / Email / Push)',
-    'RabbitMQ Messaging (MassTransit)',
-    'Scheduled Notifications & Background Workers',
-    'User Preferences Management',
-    'Stored Procedures & TVPs (SQL Server)',
-    'CQRS & MediatR'
-  ]
+    id: "dbs-product-management",
+    title: "Product Management System (Full-Stack)",
+    description:
+      "Enterprise full-stack application for managing products with role-based access control, built during internship at DBS MENA. Features JWT authentication, RBAC, product status tracking, and comprehensive dashboard. Demonstrates production-ready architecture with clean separation between backend APIs and responsive frontend.",
+    image: "/assets/projects/DBS_Product_Management.png",
+    techStack: [
+      "C#",
+      "ASP.NET Core 8",
+      "Angular 21",
+      "TypeScript",
+      "EF Core",
+      "SQL Server",
+      "MediatR (CQRS)",
+      "AutoMapper",
+      "FluentValidation",
+      "JWT Authentication",
+      "ASP.NET Core Identity",
+      "RxJS",
+      "Tailwind CSS",
+      "SweetAlert2",
+      "Swagger/OpenAPI",
+    ],
+    repoUrl: "https://github.com/Dev-Ahmed-Ashraf/ProductManagement",
+    skills: [
+      "Full-Stack Development",
+      "Clean Architecture",
+      "CQRS & MediatR",
+      "JWT Authentication & RBAC",
+      "RESTful API Design",
+      "Angular Development",
+      "RxJS Reactive Programming",
+      "Entity Framework Core",
+      "SQL Server & Stored Procedures",
+      "Responsive UI with Tailwind CSS",
+      "API Documentation (Swagger)",
+      "Permission-Based Authorization",
+    ],
   },
   {
-    id: 'hotelbooking-api',
-    title: 'Hotel Booking API (.NET 8)',
+    id: "onlinecourses-notifications",
+    title: "Online Courses Notifications Microservice",
     description:
-      'Scalable and secure hotel booking REST API built with Clean Architecture. Supports hotel search, room availability, guest reservations, secure Stripe payments, hotel management dashboards, and full role-based authorization. Includes advanced testing, logging, caching, and API documentation.',
-    image: '/assets/projects/Hotel_Booking_API.png',
+      "Backend microservice built for an Online Courses Platform to handle in-app, email, and push notifications using event-driven communication. Designed with Clean Architecture and CQRS, and implemented reliable delivery with Outbox Pattern, background workers, and retry/failure handling.",
+    image: "/assets/projects/OnlineCourses_Notifications.png",
     techStack: [
-      'C#',
-      'ASP.NET Core Web API',
-      'EF Core',
-      'SQL Server',
-      'MediatR (CQRS)',
-      'FluentValidation',
-      'AutoMapper',
-      'JWT Authentication',
-      'Serilog',
-      'Stripe',
-      'Docker'
+      "C#",
+      "ASP.NET Core Web API",
+      "EF Core",
+      "SQL Server",
+      "Stored Procedures (TVPs)",
+      "MediatR (CQRS)",
+      "FluentValidation",
+      "MassTransit",
+      "RabbitMQ",
+      "Firebase Admin SDK (FCM)",
     ],
-    repoUrl: 'https://github.com/Dev-Ahmed-Ashraf/Hotel_Booking_API',
+    repoUrl:
+      "https://github.com/Dev-Ahmed-Ashraf/OnlineCourseSystem.Notifications",
     skills: [
-    'Clean Architecture',
-    'CQRS & MediatR',
-    'JWT & Role-Based Security',
-    'Error Handling & Logging',
-    'Integration Testing',
-    'Performance Optimization']
+      "Microservices & Event-Driven Architecture",
+      "RabbitMQ + MassTransit",
+      "Outbox Pattern & Reliable Delivery",
+      "Background Workers",
+      "Multi-Channel Notifications",
+      "RabbitMQ Messaging (MassTransit)",
+      "Stored Procedures (SQL Server)",
+      "CQRS & MediatR",
+    ],
   },
   {
-    id: 'ecommerce-mvc',
-    title: 'E-Commerce Platform (MVC)',
+    id: "hotelbooking-api",
+    title: "Hotel Booking API (.NET 8)",
     description:
-      'A full multi-vendor e-commerce platform delivering a complete shopping experience — including authentication with roles & 2FA, advanced product catalog with search and variations, smart shopping cart with discounts, invoiced checkout flow, order and shipping management, vendor dashboards, and admin analytics.',
-    image: '/assets/projects/E-Commerce_Main_Page.png',
+      "Modular booking API with 40+ RESTful endpoints across hotels, rooms, offers, availability, bookings, reviews, and payments. Built with Clean Architecture and CQRS, secured with JWT/RBAC, and enhanced with validation pipelines, logging, Docker, and CI/CD automation.",
+    image: "/assets/projects/Hotel_Booking_API.png",
     techStack: [
-      'C#',
-      'ASP.NET Core MVC',
-      'EF Core',
-      'LINQ',
-      'SQL Server',
-      'Identity',
-      'Html',
-      'css',
-      'Javascript',
-      'jQuery',
-      'Ajax',
-      'Bootstrap 5',
-      'Chart.js'
+      "C#",
+      "ASP.NET Core Web API",
+      "EF Core",
+      "SQL Server",
+      "MediatR (CQRS)",
+      "FluentValidation",
+      "AutoMapper",
+      "JWT Authentication",
+      "Serilog",
+      "Stripe",
+      "Docker",
     ],
-    repoUrl: 'https://github.com/Dev-Ahmed-Ashraf/E-Commerce_Project',
+    repoUrl: "https://github.com/Dev-Ahmed-Ashraf/Hotel_Booking_API",
     skills: [
-    'Authentication & Authorization',
-    'Multi-Vendor System',
-    'Admin Analytics Dashboard',
-    'Order & Inventory Management',
-    'Search & Performance Optimization']
+      "Clean Architecture",
+      "CQRS & MediatR",
+      "JWT Authentication & RBAC",
+      "Stripe Payment Integration",
+      "Error Handling & Logging",
+      "Docker & GitHub Actions",
+      "Performance Optimization",
+    ],
   },
   {
-    id: 'driving-license-app',
-    title: 'Driving License Management System',
+    id: "ecommerce-mvc",
+    title: "E-Commerce Platform (MVC)",
     description:
-      'A complete government-grade desktop system for managing driver licensing workflows. Supports license issuance/renewals, international licenses, replacement for lost/damaged licenses, license detention and release, test scheduling (Vision/Written/practical), application processing, and full driver history tracking — secured with role-based access control and comprehensive reporting.',
-    image: '/assets/projects/Driver_License_Management_Project.png',
+      "End-to-end e-commerce platform covering product management, cart, checkout, authentication, and order workflows. Improved UX using AJAX-driven partial updates and implemented secure identity, pagination, logging, and server-side validation.",
+    image: "/assets/projects/E-Commerce_Main_Page.png",
     techStack: [
-      'C#',
-      '.NET Framework (WinForms)',
-      'SQL Server',
-      'ADO.NET',
-      'Layered Architecture'
+      "C#",
+      "ASP.NET Core MVC",
+      "EF Core",
+      "LINQ",
+      "SQL Server",
+      "ASP.NET Identity",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "AJAX",
+      "Bootstrap 5",
     ],
-    repoUrl: 'https://github.com/Dev-Ahmed-Ashraf/Driver-License-Management-System',
+    repoUrl: "https://github.com/Dev-Ahmed-Ashraf/E-Commerce_Project",
     skills: [
-    'Desktop Development',
-    'Authentication & Authorization',
-    'Database Management',
-    'Reporting System',
-    'CRUD Operations']
-  }
-]
-
-
+      "Authentication & Authorization",
+      "AJAX-based Dynamic UI",
+      "Order & Checkout Management",
+      "Pagination & Query Optimization",
+      "Server-Side Validation",
+    ],
+  },
+];

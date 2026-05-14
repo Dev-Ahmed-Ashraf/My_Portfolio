@@ -4,7 +4,7 @@ import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 const footerNav = [
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Experience', href: '#timeline' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -30,10 +30,10 @@ const Footer = () => {
               <p className="text-xl font-semibold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400">
                 Ahmed Ashraf
               </p>
-              <h3 className="text-lg font-bold text-slate-700 dark:text-white">Backend Developer</h3>
+              <h3 className="text-lg font-bold text-slate-700 dark:text-white">Full Stack .NET Developer</h3>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-              Crafting scalable, enterprise-grade backend systems using modern .NET technologies and clean architecture principles.
+              Building secure, scalable web applications with ASP.NET Core, Angular, SQL Server, and clean architecture principles.
             </p>
           </motion.div>
 

@@ -6,6 +6,7 @@ import type { ThemeMode } from '../utils/theme'
 // Lazy-load heavier content to improve initial bundle and perceived performance
 const FeaturedProjects = lazy(() => import('../components/FeaturedProjects'))
 const SkillsGrid = lazy(() => import('../components/SkillsGrid'))
+const ProfessionalExperience = lazy(() => import('../components/ProfessionalExperience'))
 const Timeline = lazy(() => import('../components/Timeline'))
 const ContactForm = lazy(() => import('../components/ContactForm'))
 const Footer = lazy(() => import('../components/Footer'))
@@ -27,7 +28,7 @@ const Home = ({ theme, onToggleTheme }: HomeProps) => {
   
   // Accessibility: quick skip link to main content for keyboard users
   useEffect(() => {
-    document.title = 'Ahmed Ashraf | .NET Backend Developer'
+    document.title = 'Ahmed Ashraf | Full Stack .NET Developer'
   }, [])
 
   const handleScrollToProjects = useCallback(() => {
@@ -59,7 +60,7 @@ const Home = ({ theme, onToggleTheme }: HomeProps) => {
 <Suspense fallback={<LoadingBlock label="Projects" />}>
   <FeaturedProjects
     highlightSkill={highlightSkill}
-    onSelectSkill={handleSelectSkill}  // ⬅⬅ إضافـة مهمة
+    onSelectSkill={handleSelectSkill}
   />
 </Suspense>
 
@@ -69,6 +70,10 @@ const Home = ({ theme, onToggleTheme }: HomeProps) => {
         </Suspense>
 
         <Suspense fallback={<LoadingBlock label="Experience" />}>
+          <ProfessionalExperience />
+        </Suspense>
+
+        <Suspense fallback={<LoadingBlock label="Timeline" />}>
           <Timeline />
         </Suspense>
 

@@ -6,7 +6,7 @@ import type { ThemeMode } from '../utils/theme'
 const navLinks = [
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
-  { id: 'timeline', label: 'Experience' },
+  { id: 'experience', label: 'Experience' },
   { id: 'contact', label: 'Contact' },
 ]
 

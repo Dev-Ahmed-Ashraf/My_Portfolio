@@ -1,83 +1,349 @@
 export type SkillCluster = {
-  id: string
-  title: string
-  description: string
+  id: string;
+  title: string;
+  description: string;
   items: {
-    id: string
-    label: string
-    level: number
-    projects: string[]
-  }[]
-}
+    id: string;
+    label: string;
+    level: number;
+    projects: string[];
+  }[];
+};
 
 // Skills aligned with actual projects from projects.ts
 export const skillClusters: SkillCluster[] = [
   {
-    id: 'backend-frameworks',
-    title: 'Backend Frameworks',
-    description: 'Building scalable APIs and full-stack apps using modern .NET technologies.',
+    id: "frontend-development",
+    title: "Frontend Development",
+    description:
+      "Building responsive and maintainable user interfaces with modern web tooling.",
     items: [
-      { id: 'csharp', label: 'C#', level: 92, projects: ['hotelbooking-api', 'ecommerce-mvc', 'driving-license-app', 'onlinecourses-notifications'] },
-      { id: 'aspnet-core-api', label: 'ASP.NET Core Web API', level: 88, projects: ['hotelbooking-api', 'onlinecourses-notifications'] },
-      { id: 'aspnet-core-mvc', label: 'ASP.NET Core MVC', level: 85, projects: ['ecommerce-mvc'] },
-      { id: 'windows-forms', label: '.NET Windows Forms', level: 78, projects: ['driving-license-app'] },
-    ]
+      {
+        id: "angular",
+        label: "Angular",
+        level: 85,
+        projects: ["dbs-product-management"],
+      },
+      {
+        id: "typescript",
+        label: "TypeScript",
+        level: 87,
+        projects: ["ecommerce-mvc", "dbs-product-management"],
+      },
+      {
+        id: "rxjs",
+        label: "RxJS",
+        level: 82,
+        projects: ["dbs-product-management"],
+      },
+      {
+        id: "javascript",
+        label: "JavaScript",
+        level: 86,
+        projects: ["ecommerce-mvc"],
+      },
+      {
+        id: "tailwind-css",
+        label: "Tailwind CSS",
+        level: 85,
+        projects: ["dbs-product-management"],
+      },
+      { id: "ajax", label: "AJAX", level: 87, projects: ["ecommerce-mvc"] },
+    ],
   },
   {
-    id: 'databases',
-    title: 'Databases & ORMs',
-    description: 'Efficient and secure database operations using SQL Server and EF Core.',
+    id: "backend-development",
+    title: "Backend Development",
+    description:
+      "Designing secure, scalable services and APIs with ASP.NET Core.",
     items: [
-      { id: 'sql-server', label: 'SQL Server', level: 90, projects: ['hotelbooking-api', 'ecommerce-mvc', 'driving-license-app', 'onlinecourses-notifications'] },
-      { id: 'ef-core', label: 'Entity Framework Core', level: 87, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
-      { id: 'linq', label: 'LINQ', level: 86, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
-      { id: 'ado-net', label: 'ADO.NET', level: 80, projects: ['driving-license-app'] },
-    ]
+      {
+        id: "csharp",
+        label: "C#",
+        level: 93,
+        projects: [
+          "hotelbooking-api",
+          "ecommerce-mvc",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
+      },
+      {
+        id: "aspnet-core",
+        label: "ASP.NET Core",
+        level: 91,
+        projects: [
+          "hotelbooking-api",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
+      },
+      {
+        id: "aspnet-mvc",
+        label: "ASP.NET MVC",
+        level: 85,
+        projects: ["ecommerce-mvc"],
+      },
+      {
+        id: "rest-apis",
+        label: "RESTful APIs",
+        level: 91,
+        projects: [
+          "hotelbooking-api",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
+      },
+      {
+        id: "background-services",
+        label: "Background Services",
+        level: 84,
+        projects: ["onlinecourses-notifications"],
+      },
+    ],
   },
   {
-    id: 'architecture-patterns',
-    title: 'Architecture & Design Patterns',
-    description: 'Clean and maintainable code using modern architectural standards.',
+    id: "architecture-design",
+    title: "Architecture & Design Patterns",
+    description:
+      "Building maintainable enterprise systems using proven architectural approaches.",
     items: [
-      { id: 'clean-arch', label: 'Clean Architecture', level: 88, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
-      { id: 'cqrs-mediator', label: 'CQRS + MediatR', level: 83, projects: ['hotelbooking-api', 'onlinecourses-notifications'] },
-      { id: 'repo-pattern', label: 'Repository Pattern', level: 91, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
-      { id: 'layered-arch', label: 'Layered Architecture', level: 82, projects: ['driving-license-app'] },
-    ]
+      {
+        id: "clean-architecture",
+        label: "Clean Architecture",
+        level: 91,
+        projects: [
+          "hotelbooking-api",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
+      },
+      {
+        id: "cqrs-mediatr",
+        label: "CQRS (MediatR)",
+        level: 89,
+        projects: [
+          "hotelbooking-api",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
+      },
+      {
+        id: "repository-pattern",
+        label: "Repository Pattern",
+        level: 87,
+        projects: ["hotelbooking-api", "ecommerce-mvc"],
+      },
+      {
+        id: "unit-of-work",
+        label: "Unit of Work",
+        level: 84,
+        projects: ["hotelbooking-api"],
+      },
+      {
+        id: "layered-architecture",
+        label: "Layered Architecture",
+        level: 82,
+        projects: ["ecommerce-mvc"],
+      },
+      {
+        id: "fluentvalidation",
+        label: "FluentValidation",
+        level: 87,
+        projects: [
+          "hotelbooking-api",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
+      },
+      {
+        id: "automapper",
+        label: "AutoMapper",
+        level: 85,
+        projects: ["hotelbooking-api", "dbs-product-management"],
+      },
+      {
+        id: "outbox-pattern",
+        label: "Outbox Pattern",
+        level: 85,
+        projects: ["onlinecourses-notifications"],
+      },
+    ],
   },
   {
-    id: 'security-auth',
-    title: 'Security & Authentication',
-    description: 'Secure development practices including identity and JWT-based auth.',
+    id: "database-development",
+    title: "Database Development",
+    description:
+      "Designing efficient SQL models and reliable data access layers.",
     items: [
-      { id: 'jwt-auth', label: 'JWT Authentication', level: 86, projects: ['hotelbooking-api'] },
-      { id: 'identity', label: 'ASP.NET Identity', level: 82, projects: ['ecommerce-mvc'] },
-      { id: 'rbac', label: 'Role-Based Access Control (RBAC)', level: 85, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
-      { id: 'security-best', label: 'Security Best Practices', level: 80, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
-    ]
+      {
+        id: "sql-server",
+        label: "SQL Server",
+        level: 91,
+        projects: [
+          "hotelbooking-api",
+          "ecommerce-mvc",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
+      },
+      {
+        id: "tsql",
+        label: "T-SQL",
+        level: 84,
+        projects: ["onlinecourses-notifications"],
+      },
+      {
+        id: "ef-core",
+        label: "Entity Framework Core",
+        level: 89,
+        projects: [
+          "hotelbooking-api",
+          "ecommerce-mvc",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
+      },
+      {
+        id: "linq",
+        label: "LINQ",
+        level: 87,
+        projects: [
+          "hotelbooking-api",
+          "ecommerce-mvc",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
+      },
+      {
+        id: "stored-procedures",
+        label: "Stored Procedures",
+        level: 82,
+        projects: ["onlinecourses-notifications"],
+      },
+      {
+        id: "indexing-transactions",
+        label: "Indexing & Transactions",
+        level: 80,
+        projects: ["hotelbooking-api"],
+      },
+    ],
   },
   {
-    id: 'testing-logging',
-    title: 'Testing & Logging',
-    description: 'Ensuring reliability through automated tests and structured logging.',
+    id: "authentication-security",
+    title: "Security & Authentication",
+    description:
+      "Applying secure authentication flows and authorization controls in production systems.",
     items: [
-      { id: 'integration-test', label: 'Integration Testing', level: 80, projects: ['hotelbooking-api'] },
-      { id: 'unit-test', label: 'Unit Testing', level: 75, projects: ['hotelbooking-api'] },
-      { id: 'serilog', label: 'Serilog Logging', level: 89, projects: ['hotelbooking-api', 'ecommerce-mvc'] },
-      { id: 'exception-handling', label: 'Error & Exception Handling', level: 85, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
-    ]
+      {
+        id: "jwt-authentication",
+        label: "JWT Authentication",
+        level: 90,
+        projects: ["hotelbooking-api", "dbs-product-management"],
+      },
+      {
+        id: "refresh-tokens",
+        label: "Refresh Tokens",
+        level: 84,
+        projects: ["hotelbooking-api"],
+      },
+      {
+        id: "aspnet-identity",
+        label: "ASP.NET Identity",
+        level: 84,
+        projects: ["ecommerce-mvc"],
+      },
+      {
+        id: "rbac",
+        label: "Role-Based Access Control (RBAC)",
+        level: 90,
+        projects: [
+          "hotelbooking-api",
+          "ecommerce-mvc",
+          "dbs-product-management",
+        ],
+      },
+    ],
   },
   {
-    id: 'advanced-features',
-    title: 'Advanced Features & Tooling',
-    description: 'Enhancing user experience and system performance with modern tools.',
+    id: "distributed-systems",
+    title: "Distributed Systems & Messaging",
+    description:
+      "Building decoupled services using asynchronous communication patterns.",
     items: [
-      { id: 'stripe', label: 'Stripe Payments Integration', level: 78, projects: ['hotelbooking-api'] },
-      { id: 'admin-dashboard', label: 'Admin Dashboard & Reports', level: 85, projects: ['ecommerce-mvc', 'hotelbooking-api'] },
-      { id: 'devtools', label: 'Developer Tools (Swagger, Postman)', level: 87, projects: ['hotelbooking-api'] },
-      { id: 'git', label: 'Git / GitHub Workflow', level: 85, projects: ['hotelbooking-api', 'ecommerce-mvc', 'onlinecourses-notifications'] },
-    ]
-  }
-]
-
-
+      {
+        id: "microservices",
+        label: "Microservices",
+        level: 84,
+        projects: ["onlinecourses-notifications"],
+      },
+      {
+        id: "event-driven-architecture",
+        label: "Event-Driven Architecture",
+        level: 86,
+        projects: ["onlinecourses-notifications"],
+      },
+      {
+        id: "rabbitmq",
+        label: "RabbitMQ",
+        level: 85,
+        projects: ["onlinecourses-notifications"],
+      },
+      {
+        id: "masstransit",
+        label: "MassTransit",
+        level: 84,
+        projects: ["onlinecourses-notifications"],
+      },
+    ],
+  },
+  {
+    id: "cloud-devops-testing",
+    title: "Cloud, DevOps & Testing",
+    description:
+      "Team-ready delivery workflows, testing practices, and developer tooling.",
+    items: [
+      {
+        id: "git-github",
+        label: "Git & GitHub",
+        level: 88,
+        projects: [
+          "hotelbooking-api",
+          "ecommerce-mvc",
+          "onlinecourses-notifications",
+        ],
+      },
+      {
+        id: "docker",
+        label: "Docker",
+        level: 83,
+        projects: ["hotelbooking-api"],
+      },
+      {
+        id: "github-actions",
+        label: "GitHub Actions (CI/CD)",
+        level: 80,
+        projects: ["hotelbooking-api"],
+      },
+      {
+        id: "xunit",
+        label: "xUnit",
+        level: 80,
+        projects: ["hotelbooking-api"],
+      },
+      { id: "moq", label: "Moq", level: 76, projects: ["hotelbooking-api"] },
+      {
+        id: "integration-testing",
+        label: "Integration Testing",
+        level: 82,
+        projects: ["hotelbooking-api"],
+      },
+      {
+        id: "swagger-postman",
+        label: "Swagger & Postman",
+        level: 88,
+        projects: ["hotelbooking-api", "onlinecourses-notifications"],
+      },
+    ],
+  },
+];
