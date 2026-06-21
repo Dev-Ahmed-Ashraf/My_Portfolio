@@ -5,6 +5,7 @@ export type Project = {
   image: string;
   techStack: string[];
   repoUrl: string;
+  demoUrl?: string;
   skills: string[];
 };
 
@@ -99,6 +100,8 @@ export const projects: Project[] = [
       "Docker",
     ],
     repoUrl: "https://github.com/Dev-Ahmed-Ashraf/Hotel_Booking_API",
+    demoUrl:
+      "https://app-hotelbooking-production-fzajfm.azurewebsites.net/swagger",
     skills: [
       "Clean Architecture",
       "CQRS & MediatR",

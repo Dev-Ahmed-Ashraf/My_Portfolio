@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FiGithub } from 'react-icons/fi'
+import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import type { Project } from '../data/projects'
 
 type ProjectCardProps = {
@@ -130,7 +130,7 @@ const ProjectCard = ({ project, highlighted }: ProjectCardProps) => {
         </div>
 
         {/* GitHub button - enhanced */}
-        <div className="mt-6 flex gap-3">
+        <div className={`mt-6 grid gap-3 ${project.demoUrl ? 'grid-cols-2' : 'grid-cols-1'}`}>
           <motion.a
             href={project.repoUrl}
             target="_blank"
@@ -157,6 +157,26 @@ const ProjectCard = ({ project, highlighted }: ProjectCardProps) => {
               View Code
             </span>
           </motion.a>
+
+          {project.demoUrl && (
+            <motion.a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="group/btn focus-outline flex-1 relative inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-white overflow-hidden"
+            >
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-slate-800 via-slate-700 to-slate-900 dark:from-slate-700 dark:via-slate-600 dark:to-slate-800" />
+              <div className="absolute inset-0 rounded-full border border-white/20 group-hover/btn:border-white/40 transition-all duration-300" />
+              <div className="absolute inset-0 rounded-full shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_8px_24px_rgba(15,23,42,0.35)] group-hover/btn:shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_12px_32px_rgba(15,23,42,0.45)] transition-shadow duration-300" />
+
+              <span className="relative z-10 flex items-center gap-2">
+                <FiExternalLink className="group-hover/btn:rotate-12 transition-transform duration-300" />
+                Live Demo
+              </span>
+            </motion.a>
+          )}
         </div>
       </div>
 
