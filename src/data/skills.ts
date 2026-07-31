@@ -298,6 +298,32 @@ export const skillClusters: SkillCluster[] = [
     ],
   },
   {
+    id: "ai-rag-engineering",
+    title: "AI & RAG Engineering",
+    description:
+      "Integrating agentic AI function calling, vector search databases, and RAG knowledge pipelines.",
+    items: [
+      {
+        id: "llm-function-calling",
+        label: "Agentic AI & Function Calling",
+        level: 90,
+        projects: ["dbs-product-management"],
+      },
+      {
+        id: "rag-pipelines",
+        label: "RAG & Vector Search (Qdrant)",
+        level: 88,
+        projects: ["dbs-product-management"],
+      },
+      {
+        id: "ollama-embeddings",
+        label: "Ollama Local Embeddings",
+        level: 86,
+        projects: ["dbs-product-management"],
+      },
+    ],
+  },
+  {
     id: "cloud-devops-testing",
     title: "Cloud, DevOps & Testing",
     description:
@@ -311,13 +337,14 @@ export const skillClusters: SkillCluster[] = [
           "hotelbooking-api",
           "ecommerce-mvc",
           "onlinecourses-notifications",
+          "dbs-product-management",
         ],
       },
       {
         id: "docker",
         label: "Docker",
-        level: 83,
-        projects: ["hotelbooking-api"],
+        level: 85,
+        projects: ["hotelbooking-api", "dbs-product-management"],
       },
       {
         id: "github-actions",
@@ -342,7 +369,11 @@ export const skillClusters: SkillCluster[] = [
         id: "swagger-postman",
         label: "Swagger & Postman",
         level: 88,
-        projects: ["hotelbooking-api", "onlinecourses-notifications"],
+        projects: [
+          "hotelbooking-api",
+          "onlinecourses-notifications",
+          "dbs-product-management",
+        ],
       },
     ],
   },
