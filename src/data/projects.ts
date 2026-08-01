@@ -102,6 +102,7 @@ export const projects: Project[] = [
       "Serilog",
       "Stripe",
       "Docker",
+      "Azure",
     ],
     repoUrl: "https://github.com/Dev-Ahmed-Ashraf/Hotel_Booking_API",
     demoUrl:
