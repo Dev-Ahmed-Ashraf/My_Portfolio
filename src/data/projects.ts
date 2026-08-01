@@ -35,7 +35,7 @@ export const projects: Project[] = [
       "Docker",
       "Swagger/OpenAPI",
     ],
-    repoUrl: "https://github.com/Dev-Ahmed-Ashraf/ProductManagement",
+    repoUrl: "https://github.com/Dev-Ahmed-Ashraf/-AI-Product-Intelligence-Platform-",
     demoUrl:
       "https://drive.google.com/file/d/1O7r_LgC-59QLNwL-4cutUn7GmQBnQFOm/view?usp=sharing",
     skills: [
